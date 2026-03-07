@@ -11,7 +11,7 @@ export default function TermsPage() {
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tight mb-8">Terms of Service</h1>
         
-        <p className="text-muted-foreground text-sm">Last Updated: January 30, 2026</p>
+        <p className="text-muted-foreground text-sm">Last Updated: March 6, 2026</p>
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">1. Acceptance of Terms</h2>

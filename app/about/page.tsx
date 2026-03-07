@@ -46,17 +46,17 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border bg-card text-card-foreground shadow-sm">
               <h3 className="font-semibold text-lg mb-2">SignalsMaster</h3>
-              <p className="text-sm text-muted-foreground mb-4">Training & Operations Management</p>
+              <p className="text-sm text-muted-foreground mb-4">Master International Code of Signals</p>
               <p className="text-sm leading-relaxed">
-                A comprehensive tool for managing unit training schedules, attendance tracking, and qualification records. SignalsMaster simplifies the complexity of training plans, ensuring instructors have the information they need at their fingertips.
+                A comprehensive educational & gamification tool for mastering the International Code of Signals. Through interactive flashcards, quizzes, and real-world scenario simulations, SignalsMaster makes learning maritime communication engaging and effective for cadets of all ages.
               </p>
             </div>
             
             <div className="p-6 rounded-xl border bg-card text-card-foreground shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">Quartermaster</h3>
+              <h3 className="font-semibold text-lg mb-2">Cadet Inventory Management System</h3>
               <p className="text-sm text-muted-foreground mb-4">Supply & Logistics</p>
               <p className="text-sm leading-relaxed">
-                A modern inventory management system designed specifically for the unique needs of cadet supply stores. Track uniforms, equipment issuance, and stock levels with precision and ease, moving away from spreadsheets and paper logs.
+                A modern inventory management system designed specifically for the unique needs of cadet units. Track uniforms, equipment issuance, and stock levels with precision and ease, moving away from spreadsheets and paper logs.
               </p>
             </div>
           </div>
