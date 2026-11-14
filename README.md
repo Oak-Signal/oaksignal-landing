@@ -2,9 +2,9 @@
 
 ### Building reliable systems for cadet organizations
 
-[![Build Status](https://github.com/mjsamaha/oaksignal-landing/actions/workflows/deploy.yml/badge.svg)](https://github.com/mjsamaha/oaksignal-landing/actions/workflows/deploy.yml)
+[![Build Status](https://github.com/Oak-Signal/oaksignal-landing/actions/workflows/deploy.yml/badge.svg)](https://github.com/Oak-Signal/oaksignal-landing/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Deployment Status](https://img.shields.io/website?url=https%3A%2F%2Fmjsamaha.github.io%2Foaksignal-landing%2F&label=Deployment&style=flat-square)](https://mjsamaha.github.io/oaksignal-landing/)
+[![Deployment Status](https://img.shields.io/website?url=https%3A%2F%2Foak-signal.github.io%2Foaksignal-landing%2F&label=Deployment&style=flat-square)](https://oak-signal.github.io/oaksignal-landing/)
 
 ---
 
@@ -13,7 +13,7 @@
 The **OakSignal Landing Page** serves as the digital front door for OakSignal, a software initiative dedicated to building modern, reliable digital systems for cadet and youth organizations.
 
 This site showcases our mission found on:
-👉 **[Live Site: https://mjsamaha.github.io/oaksignal-landing/](https://mjsamaha.github.io/oaksignal-landing/)**
+👉 **[Live Site: https://oak-signal.github.io/oaksignal-landing/](https://oak-signal.github.io/oaksignal-landing/)**
 
 It is built to demonstrate our commitment to **Clarity**, **Accessibility**, and **Reliability**—the same core values that drive all our software solutions.
 
@@ -55,7 +55,7 @@ Follow these steps to set up the project locally.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/mjsamaha/oaksignal-landing.git
+   git clone https://github.com/Oak-Signal/oaksignal-landing.git
    cd oaksignal-landing
    ```
 
@@ -137,7 +137,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **OakSignal Team**
 
-For inquiries about OakSignal projects, please visit the [OakSignal landing page](https://mjsamaha.github.io/oaksignal-landing/) or contact through the website.
+For inquiries about OakSignal projects, please visit the [OakSignal landing page](https://oak-signal.github.io/oaksignal-landing/) or contact through the website.
 
 ---
 *Built with ❤️ for the Cadet Program.*
