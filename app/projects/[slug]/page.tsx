@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                         </h1>
                         <Badge
                             variant={project.status === "Live" ? "default" : "secondary"}
-                            className={`${project.status === 'In Development' ? 'animate-pulse' : ''} text-sm`}
+                            className={`${project.status === 'Pre-Alpha' ? 'animate-pulse' : ''} text-sm`}
                         >
                             {project.status}
                         </Badge>

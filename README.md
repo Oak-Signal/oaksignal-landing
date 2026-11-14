@@ -26,7 +26,7 @@ Designed with a focus on professional polish and user experience:
 - **📱 Mobile-First Design**: Fully responsive layout that adapts seamlessly to all device sizes.
 - **⚡ High Performance**: Static site generation (SSG) ensures lightning-fast load times.
 - **♿ Accessible**: Adheres to accessibility best practices for inclusive usage.
-- **🛠️ Project Showcase**: Dedicated pages for OakSignal's suite of tools (SignalsMaster, Quartermaster).
+- **🛠️ Project Showcase**: Dedicated pages for OakSignal's suite of tools: [SignalsMaster](https://github.com/Oak-Signal/oaksignal-signalsmaster) (Beta) and [CITADEL](https://github.com/Oak-Signal/oaksignal-citadel) (Pre-Alpha), from the [Oak-Signal](https://github.com/Oak-Signal) GitHub organization.
 
 ---
 

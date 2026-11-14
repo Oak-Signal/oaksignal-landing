@@ -45,18 +45,18 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold tracking-tight">Our Platform</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border bg-card text-card-foreground shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">SignalsMaster</h3>
-              <p className="text-sm text-muted-foreground mb-4">Master International Code of Signals</p>
+              <h3 className="font-semibold text-lg mb-2">SignalsMaster <span className="text-xs font-medium text-green-700 dark:text-green-500">Ready for Beta</span></h3>
+              <p className="text-sm text-muted-foreground mb-4">Naval Signal Flag Training</p>
               <p className="text-sm leading-relaxed">
-                A comprehensive educational & gamification tool for mastering the International Code of Signals. Through interactive flashcards, quizzes, and real-world scenario simulations, SignalsMaster makes learning maritime communication engaging and effective for cadets of all ages.
+                An interactive, mobile-friendly app for Sea Cadets to learn, practice, and master naval signal flags through quizzes, ranked mode, and formal exams. Currently single-tenant, with multi-tenant support in development.
               </p>
             </div>
             
             <div className="p-6 rounded-xl border bg-card text-card-foreground shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">Cadet Inventory Management System</h3>
-              <p className="text-sm text-muted-foreground mb-4">Supply & Logistics</p>
+              <h3 className="font-semibold text-lg mb-2">CITADEL <span className="text-xs font-medium text-blue-700 dark:text-blue-400">Pre-Alpha</span></h3>
+              <p className="text-sm text-muted-foreground mb-4">Inventory & Logistics</p>
               <p className="text-sm leading-relaxed">
-                A modern inventory management system designed specifically for the unique needs of cadet units. Track uniforms, equipment issuance, and stock levels with precision and ease, moving away from spreadsheets and paper logs.
+                A multi-tenant inventory management platform (CIMS) that lets multiple cadet units track equipment, issuance, and returns with isolated data, role-based permissions, and a full audit trail. Currently in development.
               </p>
             </div>
           </div>

@@ -93,13 +93,13 @@ export default function FAQPage() {
               <AccordionItem value="products">
                 <AccordionTrigger>What is the first project that is being developed by the team at OakSignal?</AccordionTrigger>
                 <AccordionContent>
-                  OakSignal is actively developing a mobile application called <strong>SignalsMaster</strong>, a software solution for mastering the International Code of Signals.
+                  OakSignal is actively developing <strong>SignalsMaster</strong>, an interactive web app for mastering naval signal flags. It is ready for Beta and is currently single-tenant, with multi-tenant support in development.
                 </AccordionContent> 
               </AccordionItem>
               <AccordionItem value="products">
                 <AccordionTrigger>What is currently being planned for the future?</AccordionTrigger>
                 <AccordionContent>
-                  In addition to SignalsMaster, we are planning a modern supply tool, labelled <strong>Cadet Inventory Management System</strong> designed specifically for the unique needs of cadet units. This will allow staff to track uniforms, equipment issuance, and stock levels with precision and ease, moving away from spreadsheets and paper logs.
+                  In addition to SignalsMaster, we are developing <strong>CITADEL</strong> (Pre-Alpha), a multi-tenant inventory management system (CIMS) that lets multiple cadet units track uniforms, equipment issuance, and stock levels with isolated data, moving away from spreadsheets and paper logs.
                 </AccordionContent> 
               </AccordionItem>
             </Accordion>

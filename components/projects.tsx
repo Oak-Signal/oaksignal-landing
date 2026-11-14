@@ -51,7 +51,7 @@ export default function Projects() {
                         >
                             <div>
                                 <div className="flex items-center justify-between gap-x-4 text-xs mb-4">
-                                    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 font-medium ring-1 ring-inset ${project.statusColor} ${project.status === 'In Development' ? 'animate-pulse' : ''}`}>
+                                    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 font-medium ring-1 ring-inset ${project.statusColor} ${project.status === 'Pre-Alpha' ? 'animate-pulse' : ''}`}>
                                         {project.status}
                                     </span>
                                 </div>

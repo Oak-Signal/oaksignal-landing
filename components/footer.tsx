@@ -15,7 +15,7 @@ const navigation = {
     social: [
         {
             name: "GitHub",
-            href: "https://github.com/mjsamaha",
+            href: "https://github.com/Oak-Signal",
             icon: Github,
         },
     ],

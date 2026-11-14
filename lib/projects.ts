@@ -5,7 +5,7 @@ export interface Project {
     title: string;
     description: string;
     executiveSummary: string;
-    status: "Live" | "In Development" | "Planning";
+    status: "Live" | "Beta" | "Pre-Alpha";
     statusColor: string;
     tech: string[];
     href: string;
@@ -63,118 +63,118 @@ export const projects: Project[] = [
         id: 1,
         slug: "signalsmaster",
         title: "SignalsMaster",
-        description: "Multi-tenant learning management platform for sea cadet units.",
-        executiveSummary: "A specialized learning management system purpose-built for sea cadets where each unit operates in its own isolated digital space with complete data separation. Think D2L/Canvas, but for maritime training.",
-        status: "In Development",
-        statusColor: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-500 ring-yellow-600/20",
-        tech: ["Next.js", "ShadCN/UI", "Convex", "Clerk", "Multi-Tenant"],
+        description: "Interactive naval signal flag training for Sea Cadets. Ready for Beta.",
+        executiveSummary: "A mobile-friendly web app that helps Sea Cadets learn, practice, and master naval signal flags and pennants through interactive quizzes, ranked competition, and formal exams. Currently single-tenant and ready for Beta, with multi-tenant support in active development.",
+        status: "Beta",
+        statusColor: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-500 ring-green-600/20",
+        tech: ["Next.js 16", "TypeScript", "ShadCN/UI", "Framer Motion", "Convex", "Clerk"],
         href: "/projects/signalsmaster",
-        repoUrl: "https://github.com/mjsamaha/oaksignal-signalsmaster",
-        problem: "Fragmented knowledge management and inconsistent training delivery across cadet units.",
+        repoUrl: "https://github.com/Oak-Signal/oaksignal-signalsmaster",
+        demoUrl: "https://youtu.be/migVniG5wvs",
+        problem: "Static, pen-and-paper signal flag testing gives slow feedback and little insight into cadet readiness.",
         problemDomain: {
-            headline: "The Challenge: Fragmented & Inconsistent Training",
+            headline: "The Challenge: Static Signal Flag Learning",
             points: [
-                "No centralized learning platform tailored to maritime cadet training.",
-                "Fragmented knowledge management across drives, emails, and paper.",
-                "Inconsistent training delivery across different units.",
-                "No way to track cadet progress or mastery of critical skills.",
-                "Limited engagement—training feels like homework rather than achievement.",
-                "Legacy Ionic app had limitations—need for modern stack for better UX and maintainability."
+                "Signal flags are learned from static diagrams and pen-and-paper tests.",
+                "Feedback is slow, so recognition improves slowly.",
+                "Little motivation or sense of progress for cadets.",
+                "Instructors lack data-driven insight into cadet readiness.",
+                "Formal assessments are hard to run consistently and securely."
             ]
         },
-        outcome: "A modern, multi-tenant LMS providing isolated digital spaces for units with structured assessments and gamified learning.",
+        outcome: "An interactive, gamified platform with immediate feedback, ranked modes, secure exams, and instructor insight into readiness.",
         solution: {
-            headline: "Our Solution: Dedicated Multi-Tenant Platform",
+            headline: "Our Solution: Interactive Precision Training",
             points: [
-                "Modern Stack Migration: Re-building from Ionic to Next.js + ShadCN for better performance.",
-                "Multi-Tenant Architecture: Each unit sees only their cadets, quizzes, and leaderboards.",
-                "Specialized Learning Modules: Signal Flags, Points of Sail, Drill, Seamanship.",
-                "Gamified Assessments: Quizzes with instant feedback, achievements, and unit leaderboards.",
-                "Data Isolation & Security: Complete separation of unit data with row-level security.",
-                "Offline Capability: PWA with offline mode for field training scenarios."
+                "Interactive Practice: Customizable sessions (5-30+ flags) with \"Identify by Name\" and \"Match Meaning\" modes.",
+                "Ranked Competitive Mode: Timed play where speed and accuracy determine fleet ranking.",
+                "Formal Exams: Structured assessments with immutable results for instructor review.",
+                "Reference Guide: Mobile-friendly encyclopedia of all standard naval flags and pennants.",
+                "Security First: Anti-cheat measures for exams and automated secret scanning.",
+                "Multi-Tenant Roadmap: Currently single-tenant; multi-tenant support is under development."
             ]
         },
         features: [
-            "Multi-Tenant Architecture",
-            "Unit-Specific Leaderboards",
-            "Interactive Learning Modules",
-            "Real-time Progress Tracking",
-            "Role-Based Access Control",
-            "Offline PWA Support"
+            "Interactive Practice Sessions",
+            "Ranked Competitive Mode & Leaderboards",
+            "Formal Exams with Anti-Cheat Measures",
+            "Flag & Pennant Reference Guide",
+            "Mobile-Friendly Design",
+            "Multi-Tenant Support (In Development)"
         ],
-        detailedOverview: "SignalsMaster is a specialized learning management system designed to modernize sea cadet training. Unlike generic LMS platforms, it is purpose-built for the maritime context, offering specific modules for Signal Flags, Seamanship, and Drill. The platform utilizes a multi-tenant architecture, ensuring that each cadet unit operates in a completely isolated environment—securely managing their own cadets, data, and progress tracking while benefiting from a shared, robust infrastructure. Starting with a pilot at Oakville Sea Cadets, it aims to scale to units nationwide.",
+        detailedOverview: "Signals Master helps Sea Cadets learn, practice, and master naval signal flags and pennants. Moving beyond static pen-and-paper testing, it offers immediate feedback, structured assessments, and competitive gamification, while giving instructors data-driven insight into cadet readiness. The app is ready for Beta. It is currently single-tenant, and work is underway to make it multi-tenant so multiple units can use it with isolated data.",
         technicalDetails: {
-            frontend: "Next.js (React), TypeScript, ShadCN/UI, Tailwind CSS",
+            frontend: "Next.js 16 (App Router, Turbopack), React, TypeScript, Tailwind CSS, ShadCN/UI, Framer Motion",
             backend: "Convex (Serverless Functions)",
-            database: "Convex (Real-time Database with multi-tenant schema)",
+            database: "Convex (Real-time Database)",
             auth: "Clerk (Authentication and User Management)",
             storage: "Convex (File Storage)",
-            security: "Convex data validation, Clerk role-based access"
+            security: "Server-enforced exam session tokens, submission rate limiting, timing anomaly detection, Husky + gitleaks secret scanning"
         },
         timeline: [
             {
-                phase: "Alpha Launch",
-                date: "March 2026",
-                details: "Pilot with Oakville Sea Cadets"
+                phase: "Beta Readiness",
+                date: "Current",
+                details: "Single-tenant app ready for Beta"
             },
             {
-                phase: "Beta Launch",
-                date: "April 2026",
-                details: "Expanded testing and feature refinement"
+                phase: "Closed Beta",
+                date: "Upcoming",
+                details: "Accessibility (WCAG AA), polish, mobile optimization, and performance work"
             },
             {
-                phase: "Expansion",
-                date: "Q3 2026",
-                details: "Rollout to future Sea Cadet units and potential Army/Air expansion"
+                phase: "Open Beta",
+                date: "Upcoming",
+                details: "Unit and E2E testing, cross-browser testing, and security audit"
+            },
+            {
+                phase: "Multi-Tenant",
+                date: "In Development",
+                details: "Isolated spaces so multiple units can use the platform"
             }
         ],
         roles: [
             {
-                role: "Junior Cadets",
-                access: "Access learning materials, complete assessments, view own progress"
+                role: "Cadets",
+                access: "Practice, ranked mode, formal exams, reference guide, own progress"
             },
             {
-                role: "Senior Cadets",
-                access: "Mentor/tutor capabilities + Junior access"
-            },
-            {
-                role: "Officers/Instructors",
-                access: "Full admin—create content, manage cadets, view analytics, configure unit settings"
+                role: "Instructors/Admins",
+                access: "Review exam results and cadet readiness insights"
             }
         ],
         multiTenantDetails: {
-            headline: "Isolated Digital Spaces",
+            headline: "Multi-Tenancy: In Development",
             structure: [
-                "Unit: Oakville Sea Cadets (Pilot) - Cadets, Officers, Modules, Data",
-                "Unit: Future Units - Same structure, completely isolated data",
-                "Platform Level: Shared infrastructure, expansion ready"
+                "Today: Single-tenant deployment",
+                "Next: Multi-tenant architecture with isolated data per unit"
             ]
         },
         year: 2026,
-        category: "LMS",
+        category: "Training",
         organization: {
             name: "OakSignal",
             slug: "oaksignal",
             tagline: "Digital tools for cadet organizations"
         },
         metrics: [
-            { label: "Active Users", value: "Pilot Phase" },
-            { label: "Modules", value: "4+" },
-            { label: "Platform", value: "Web & PWA" },
-            { label: "Architecture", value: "Multi-Tenant" }
+            { label: "Stage", value: "Ready for Beta" },
+            { label: "Modes", value: "Practice, Ranked, Exam" },
+            { label: "Platform", value: "Web (Mobile-Friendly)" },
+            { label: "Architecture", value: "Single-Tenant → Multi-Tenant" }
         ]
     },
     {
         id: 2,
-        slug: "cims",
-        title: "Cadet Inventory Management System",
-        description: "Enterprise-grade cadet inventory and supply management system.",
-        executiveSummary: "An enterprise-grade inventory and supply management system built to streamline logistics and accountability for cadet units, featuring multi-tenant data isolation and role-based permissions.",
-        status: "Planning",
+        slug: "citadel",
+        title: "CITADEL",
+        description: "Centralized Inventory Tracking, Asset Distribution, Equipment & Logistics for cadet units. Pre-Alpha.",
+        executiveSummary: "CITADEL (CIMS, the CITADEL Inventory Management System) is OakSignal's multi-tenant inventory platform that lets multiple cadet units each manage their own equipment, assets, and logistics with complete data isolation and role-based permissions. Currently in development (Pre-Alpha).",
+        status: "Pre-Alpha",
         statusColor: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 ring-blue-600/20",
-        tech: ["Spring Boot", "Next.js", "Neon", "Clerk", "Docker"],
-        href: "/projects/cims",
-        repoUrl: "",
+        tech: ["Next.js 16", "React 19", "TypeScript", "Convex", "Clerk", "Multi-Tenant"],
+        href: "/projects/citadel",
+        repoUrl: "https://github.com/Oak-Signal/oaksignal-citadel",
         problem: "Poor inventory visibility and reliance on paper tracking leads to lost equipment and lack of accountability.",
         problemDomain: {
             headline: "The Challenge: Logistics & Accountability",
@@ -184,95 +184,94 @@ export const projects: Project[] = [
                 "Lack of clear audit trails and accountability for equipment issuance.",
                 "Difficulty managing equipment distribution, returns, and maintenance schedules.",
                 "No real-time insights into supply levels leading to shortages or overstocking.",
-                "No system for delegating inventory tasks to senior cadets while maintaining oversight."
+                "No safe way to delegate inventory tasks to senior or supply cadets while maintaining oversight."
             ]
         },
-        outcome: "Centralized system with real-time tracking, role-based permissions, audit history, and reporting for effective logistics.",
+        outcome: "A multi-tenant platform where each unit has complete visibility and control over its equipment, with permission-based roles and an append-only audit trail.",
         solution: {
-            headline: "Our Solution: Centralized Supply Chain Management",
+            headline: "Our Solution: Multi-Tenant Inventory Management",
             points: [
-                "Multi-Tenant Design: Each unit maintains separate inventory data, users, and workflows.",
-                "Real-Time Tracking: Centralized system showing current location and status of all assets.",
-                "Role-Based Access Control: Granular permissions for Officers, Senior Cadets, and Junior Cadets.",
-                "Digital Audit Trails: Complete accountability for every item movement.",
-                "Automated Alerts: Low-stock warnings, overdue returns, and maintenance reminders.",
-                "Check-In/Check-Out Workflows: Streamlined equipment sign-out with digital hand receipts."
+                "Multi-Tenant Design: Multiple units manage inventory on one platform, with each unit's data isolated from every other unit.",
+                "Inventory Catalogue: Serialized assets (radios, laptops) and bulk or consumable stock with thresholds.",
+                "Issuance & Returns: Recorded issue and return transactions with condition and responsible staff.",
+                "Cadet Self-Service: Cadets view what they hold, request equipment, and report damaged or missing items.",
+                "Fail-Closed Authorization: Every server function checks identity, active membership, and a specific permission.",
+                "Append-Only Audit Trail: Every change is logged in the same transaction, with no update or delete path."
             ]
         },
         features: [
-            "Real-time Inventory Tracking",
-            "Role-Based Access Control",
-            "Digital Audit Trails",
-            "Automated Low-Stock Alerts",
-            "Equipment Maintenance Scheduling",
-            "Digital Hand Receipts"
+            "Multi-Tenant Unit Isolation",
+            "Unit-Scoped Roles & Permissions",
+            "Inventory Catalogue (Serialized & Bulk)",
+            "Issuance & Returns",
+            "Cadet Self-Service Portal",
+            "Append-Only Audit Trail"
         ],
-        detailedOverview: "Quartermaster is an enterprise-grade inventory management system designed to solve the logistics challenges faced by cadet units. Currently in the planning and analysis phase, it aims to replace fragmented paper-based tracking with a robust, multi-tenant digital platform. By providing each unit with its own isolated data environment, Quartermaster ensures security and autonomy while offering powerful tools for tracking uniforms, equipment, and supplies. The system emphasizes accountability through digital audit trails and simplifies operations with role-based delegation, allowing senior cadets to assist with logistics under officer supervision.",
+        detailedOverview: "CITADEL, the CITADEL Inventory Management System (CIMS), is OakSignal's centralized inventory management platform for cadet units. It is multi-tenant, allowing multiple units to manage their inventory on one platform while each unit's data stays isolated from every other unit. Every action is controlled by the person's role within their unit, with separate Self-Service, Operator, and Platform portals. Access control, the inventory catalogue, issuance and returns, cadet self-service, and the audit trail are built. Dashboards and reports, and storage locations with stocktaking, are next. The project is in Pre-Alpha development.",
         technicalDetails: {
-            frontend: "Next.js, TypeScript, ShadCN/UI, GSAP",
-            backend: "Spring Boot, Spring MVC/REST API",
-            database: "Neon (Serverless PostgreSQL with multi-tenant schema)",
-            auth: "Clerk, Spring Security",
-            storage: "Cloud Storage for asset documentation",
-            security: "Row-level security, audit logging, role-based permissions",
-            infrastructure: "Render (Backend), Vercel (Frontend), Docker"
+            frontend: "Next.js 16 (App Router), React 19, TypeScript (strict), Tailwind CSS v4, shadcn/ui, Lucide",
+            backend: "Convex (server functions, real-time subscriptions)",
+            database: "Convex (unit-scoped indexes for multi-tenant isolation)",
+            auth: "Clerk, with unit-scoped roles and permissions",
+            storage: "Convex",
+            security: "Fail-closed authorization on every function, unit isolation via per-unit indexes, append-only audit log, time-limited support grants",
+            infrastructure: "Vercel, GitHub Actions CI"
         },
         timeline: [
             {
-                phase: "Q1 2026: Planning & Analysis",
-                date: "Jan - Mar 2026",
+                phase: "Foundations & Core Access",
+                date: "Complete",
                 details: [
-                    "Survey existing inventory practices at Oakville Sea Cadets",
-                    "Analyze pain points with current manual systems",
-                    "Evaluate technical approaches and architecture options",
-                    "Select best solution strategy (build vs. adapt)"
+                    "Backend, authentication, authorization, audit, design system, and CI",
+                    "Secure access with unit-scoped roles and permissions",
+                    "Unit onboarding and platform-managed provisioning"
                 ]
             },
             {
-                phase: "Q2 2026: Design & Validation",
-                date: "Apr - Jun 2026",
+                phase: "Inventory Operations",
+                date: "Complete",
                 details: [
-                    "Finalize requirements and technical architecture",
-                    "Approve database schema design",
-                    "Create and validate UI/UX mockups with stakeholders",
-                    "Establish development roadmap"
+                    "Inventory catalogue for serialized assets and bulk stock",
+                    "Equipment issuance and returns",
+                    "Cadet self-service portal and equipment requests",
+                    "Audit trail and accountability views"
                 ]
             },
             {
-                phase: "Q3 2026: Pre-Development",
-                date: "Jul - Sep 2026",
-                details: [
-                    "Refine multi-tenant isolation strategy",
-                    "Validate cross-branch applicability (Sea vs. Army)",
-                    "Begin preliminary development (Auth, CRUD)",
-                    "Incorporate lessons from SignalsMaster release"
-                ]
+                phase: "Dashboards & Reports",
+                date: "Next",
+                details: "Stock levels, overdue items, low-stock notifications, and exports"
             },
             {
-                phase: "Active Development",
-                date: "Q4 2026+",
-                details: "Target beta deployment to Oakville Sea Cadets"
+                phase: "Locations & Stocktaking",
+                date: "Planned",
+                details: "Multiple storage locations, maintenance, and stocktakes"
             }
         ],
         roles: [
             {
-                role: "Junior Cadets",
-                access: "View-only access, ability to submit equipment requests"
+                role: "Unit Administrator",
+                access: "Manage the unit, adjust role permissions within platform limits"
             },
             {
-                role: "Senior Cadets",
-                access: "Limited admin access for day-to-day operations, equipment issue/return"
+                role: "Officer Staff / Logistics Officer / Civilian Staff",
+                access: "Operator portal with actions filtered by individual permissions"
             },
             {
-                role: "Officers/Adult Staff",
-                access: "Full administrative access, reporting, system configuration"
+                role: "Senior Cadet / Instructor / Supply Cadet",
+                access: "Operator portal; a Supply Cadet can issue equipment without managing roles or settings"
+            },
+            {
+                role: "Junior Cadet",
+                access: "Self-service portal: view held equipment, request items, report damaged or missing items"
             }
         ],
         multiTenantDetails: {
-            headline: "Isolated Inventory Systems",
+            headline: "Isolated Unit Inventories",
             structure: [
-                "Unit: Oakville Sea Cadets (Pilot) - Equipment, Users, Audit Logs",
-                "Multi-Unit: Shared Platform Infrastructure"
+                "Unit: Equipment, Users, Roles, Audit Logs - isolated from every other unit",
+                "Platform Area: OakSignal administrators provision units and see no unit data without a time-limited, verified support grant",
+                "Shared Platform Infrastructure for all units"
             ]
         },
         year: 2026,
@@ -283,10 +282,10 @@ export const projects: Project[] = [
             tagline: "Digital tools for cadet organizations"
         },
         metrics: [
-            { label: "Stage", value: "Planning" },
-            { label: "Exp. Launch", value: "Q4 2026" },
-            { label: "Target Users", value: "50+" },
-            { label: "Key Feature", value: "Audit Logs" }
+            { label: "Stage", value: "Pre-Alpha" },
+            { label: "Architecture", value: "Multi-Tenant" },
+            { label: "Portals", value: "Self-Service, Operator, Platform" },
+            { label: "Key Feature", value: "Audit Trail" }
         ]
     }
 ];
